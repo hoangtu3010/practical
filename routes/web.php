@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ApartmentController;
+use App\Http\Controllers\SurveyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +14,5 @@ use App\Http\Controllers\ApartmentController;
 |
 */
 
-Route::get('/', [ApartmentController::class, "listApartment"]);
+Route::get('/', [SurveyController::class, "survey"]);
+Route::post('/submit', [SurveyController::class, "submit"]);
